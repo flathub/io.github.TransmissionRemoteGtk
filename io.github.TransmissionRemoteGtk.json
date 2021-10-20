@@ -28,12 +28,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.4.1/transmission-remote-gtk-1.4.1.tar.xz",
-                    "sha256": "59978381a558fc6d1a11091c702a88ac0be8fc7fa135ca367eec55f572a112ab"
-                },
-                {
-                    "type": "patch",
-                    "path": "appdata.patch"
+                    "url": "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.4.2/transmission-remote-gtk-1.4.2.tar.gz",
+                    "sha256": "5e299d6eedb7636bf5d8929b491f4ccc206f7e1f6cc7ea957ddb300c4ee4e963"
                 }
             ]
         }
