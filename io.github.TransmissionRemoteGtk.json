@@ -23,14 +23,11 @@
         {
             "name": "transmission-remote-gtk",
             "buildsystem": "meson",
-            "post-install": [
-                "mv /app/share/metadata /app/share/metainfo"
-            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.5.0/transmission-remote-gtk-1.5.0.tar.xz",
-                    "sha256": "51d29951fa79ad721c03bf4abd31c4579a29e5c12737ffbbbe4abde9f2fff6d5"
+                    "url": "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.5.1/transmission-remote-gtk-1.5.1.tar.xz",
+                    "sha256": "4ee0d809585336e73c503cd6fea3eeba4d65915644901a8ef77e2811efe6a2d1"
                 }
             ]
         }
