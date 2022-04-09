@@ -2,7 +2,7 @@
     "id": "io.github.TransmissionRemoteGtk",
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
-    "runtime-version": "41",
+    "runtime-version": "42",
     "rename-icon": "transmission-remote-gtk",
     "copy-icon": true,
     "command": "transmission-remote-gtk",
@@ -22,14 +22,15 @@
     "modules": [
         {
             "name": "transmission-remote-gtk",
-            "build-options": {
-                "cflags": "-fcommon"
-            },
+            "buildsystem": "meson",
+            "post-install": [
+                "mv /app/share/metadata /app/share/metainfo"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.4.2/transmission-remote-gtk-1.4.2.tar.gz",
-                    "sha256": "5e299d6eedb7636bf5d8929b491f4ccc206f7e1f6cc7ea957ddb300c4ee4e963"
+                    "url": "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.5.0/transmission-remote-gtk-1.5.0.tar.xz",
+                    "sha256": "51d29951fa79ad721c03bf4abd31c4579a29e5c12737ffbbbe4abde9f2fff6d5"
                 }
             ]
         }
