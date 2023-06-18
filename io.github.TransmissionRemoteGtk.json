@@ -27,7 +27,11 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.6.0/transmission-remote-gtk-1.6.0.tar.xz",
-                    "sha256": "b090844f6a482e6f3588070ff3fdd54b79e8f85df02b39853cfb01fccee10cac"
+                    "sha256": "b090844f6a482e6f3588070ff3fdd54b79e8f85df02b39853cfb01fccee10cac",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ]
         }
