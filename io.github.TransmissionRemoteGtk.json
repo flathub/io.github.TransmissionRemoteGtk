@@ -2,7 +2,7 @@
     "id": "io.github.TransmissionRemoteGtk",
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
-    "runtime-version": "46",
+    "runtime-version": "47",
     "rename-icon": "transmission-remote-gtk",
     "copy-icon": true,
     "command": "transmission-remote-gtk",
