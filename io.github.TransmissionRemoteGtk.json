@@ -26,12 +26,20 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.6.0/transmission-remote-gtk-1.6.0.tar.xz",
-                    "sha256": "b090844f6a482e6f3588070ff3fdd54b79e8f85df02b39853cfb01fccee10cac",
+                    "url": "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.7.0/transmission-remote-gtk-1.7.0.tar.xz",
+                    "sha256": "53eacd2029aa5d312d97260f5a0d1f271a371673bf55a48664276f993e13086e",
                     "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^([\\d.]+)$"
+                        "type": "json",
+                        "url": "https://api.github.com/repos/transmission-remote-gtk/transmission-remote-gtk/releases/latest",
+                        "tag-query": ".tag_name",
+                        "version-query": "$tag | sub(\"^transmission-remote-gtk-\"; \"\")",
+                        "url-query": ".assets[] | select(.name==\"transmission-remote-gtk-\" + $version + \".tar.xz\") | .browser_download_url",
+                        "timestamp-query": ".published_at"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/transmission-appdata.patch"
                 }
             ]
         }

@@ -1,0 +1,36 @@
+diff --git a/data/io.github.TransmissionRemoteGtk.appdata.xml.in b/data/io.github.TransmissionRemoteGtk.appdata.xml.in
+index 63cebac..90fb78d 100644
+--- a/data/io.github.TransmissionRemoteGtk.appdata.xml.in
++++ b/data/io.github.TransmissionRemoteGtk.appdata.xml.in
+@@ -19,9 +19,31 @@
+   <screenshots>
+     <screenshot height="512" width="973" type="default">
+       <image>https://community.linuxmint.com/img/screenshots/transmission-remote-gtk.png</image>
++      <caption>Main window</caption>
+     </screenshot>
+   </screenshots>
+   <releases>
++    <release version="1.7.0" date="2025-12-25">
++      <description>
++        <p>Significant Changes</p>
++        <ul>
++          <li>Fix an accounting error with seeders/leechers
++          (#224)</li>
++          <li>Remove support for trashing torrents due to
++          configuration issues (#259)</li>
++          <li>Remove local command feature, as well as various other
++          underused/unused features (#242)</li>
++          <li>Fix edge case where Transmission may send bad JSON
++          (#265)</li>
++        </ul>
++        <p>Other changes</p>
++        <ul>
++          <li>Fix some small crashes (#246, #251)</li>
++          <li>Non-user facing changes to slowly modernize the code
++          (various)</li>
++        </ul>
++      </description>
++    </release>
+     <release version="1.6.0" date="2023-06-18">
+       <description>
+           <p>This release adds some behind-the-scenes functionality as well as some small, user-facing bug fixes. The most prominent change is a new backend for interfacing with transmission-daemon that should be more robust and have less bugs.</p>
