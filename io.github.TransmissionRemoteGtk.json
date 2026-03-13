@@ -10,12 +10,9 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
-
         "--share=network",
         "--socket=pulseaudio",
-
         "--filesystem=xdg-download",
-
         "--filesystem=xdg-run/gvfsd",
         "--talk-name=org.gtk.vfs.*"
     ],
@@ -26,8 +23,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.7.0/transmission-remote-gtk-1.7.0.tar.xz",
-                    "sha256": "53eacd2029aa5d312d97260f5a0d1f271a371673bf55a48664276f993e13086e",
+                    "url": "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.7.1/transmission-remote-gtk-1.7.1.tar.xz",
+                    "sha256": "5ef98bd96b3b77eb3880474a2d904e316bb29cbd22dfa0ca85d43b04a28fba34",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/transmission-remote-gtk/transmission-remote-gtk/releases/latest",
